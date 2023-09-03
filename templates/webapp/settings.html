@@ -1,0 +1,17 @@
+{% extends 'base_internal.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4">Settings</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="{{ user_settings.notification_preferences.id_for_label }}" class="form-label">Notification Preferences</label>
+            {{ user_settings.notification_preferences }}
+            <small class="form-text text-muted">Receive email notifications</small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save Settings</button>
+    </form>
+</div>
+{% endblock %}

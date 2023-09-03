@@ -1,0 +1,38 @@
+{% extends 'base_internal.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4">Profile</h2>
+    <div class="card mb-3">
+        <div class="card-header">
+            User Information
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Full Name</h5>
+            <p class="card-text">{{ user_profile.full_name }}</p>
+            <h5 class="card-title">Contact Info</h5>
+            <p class="card-text">{{ user_profile.contact_info }}</p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-header">
+            User Settings
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Notification Preferences</h5>
+            <p class="card-text">{{ user_settings.notification_preferences }}</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            Business Profile
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Business Name</h5>
+            <p class="card-text">{{ business_profile.business_name }}</p>
+            <h5 class="card-title">Business Address</h5>
+            <p class="card-text">{{ business_profile.business_address }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
