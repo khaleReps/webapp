@@ -8,14 +8,14 @@ Before getting started, make sure you have a superuser profile created for your 
 
 ## Installation
 
-1. Download the `webapp` project and install its requirements using pip:
+1. Download the `webapp` project and install its requirements using pip:</br>
 
-`pip install -r requirements.txt`
+`pip install -r requirements.txt`</br>
 
 
-2. Place the `webapp` folder in your project directory, alongside your SQL file.
+2. Place the `webapp` folder in your project directory, alongside your SQL file.</br>
 
-3. Include the `webapp` app in your project's `settings.py` by adding it to the `INSTALLED_APPS` list:
+3. Include the `webapp` app in your project's `settings.py` by adding it to the `INSTALLED_APPS` list:</br>
 
 ```
 INSTALLED_APPS = [
@@ -52,11 +52,11 @@ urlpatterns = [
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 ```
 
-Run migrations to create the database tables:
-`django-admin makemigrations && django-admin migrate`
+Run migrations to create the database tables:</br>
+`django-admin makemigrations && django-admin migrate`</br>
 
-You're all set! Now, start the server by running the following command:
-`python manage.py runserver`
+You're all set! Now, start the server by running the following command:</br>
+`python manage.py runserver`</br>
 
 
 ###Usage
