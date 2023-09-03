@@ -1,3 +1,9 @@
+
+
+
+
+
+
 # Webapp
 
 Webapp is a Django application designed as a starting point for user-based projects.
@@ -14,6 +20,40 @@ Before getting started, make sure you have a superuser profile created for your 
 
 
 2. Place the `webapp` folder in your project directory, alongside your SQL file.</br>
+
+```
+.
+├── PROJECT
+│   ├── PROJECT 
+│   ├── db.sqlite3
+│   ├── application A
+│   ├── manage.py
+│   ├── templates *
+│   │   ├── base_external.html
+│   │   ├── base_internal.html
+│   │   └── webapp
+│   │       ├── business.html
+│   │       ├── home.html
+│   │       ├── login.html
+│   │       ├── profile.html
+│   │       ├── register.html
+│   │       ├── search_results.html
+│   │       ├── settings.html
+│   │       └── snippets
+│   │           ├── footer.html
+│   │           ├── navbar.html
+│   │           ├── search.html
+│   │           └── sidebar.html
+│   └── webapp
+│       ├── admin.py
+│       ├── apps.py
+│       ├── migrations
+│       ├── models.py
+│       ├── tests.py
+│       ├── urls.py
+│       └── views.py
+└── README.md
+```
 
 3. Include the `webapp` app in your project's `settings.py` by adding it to the `INSTALLED_APPS` list:</br>
 
