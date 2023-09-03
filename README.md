@@ -59,9 +59,9 @@ You're all set! Now, start the server by running the following command:</br>
 `python manage.py runserver`</br>
 
 
-###Usage
+### Usage
 
 Visit the Django admin panel at http://localhost:8000/admin/ and start building your user-based project with Webapp.
 
-###Author
+### Author
 Built by KS Tsoaela
