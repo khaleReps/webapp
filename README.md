@@ -17,7 +17,7 @@ Before getting started, make sure you have a superuser profile created for your 
 
 3. Include the `webapp` app in your project's `settings.py` by adding it to the `INSTALLED_APPS` list:
 
-`
+'''
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -33,14 +33,14 @@ INSTALLED_APPS = [
     # Custom Apps
     'webapp',
 ]
-`
 
 LOGIN_REDIRECT_URL = 'webapp:login'
+'''
 
 
 
 Include the webapp app in your project's urls.py:
-`
+'''
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
@@ -50,7 +50,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('webapp.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-`
+'''
 
 Run migrations to create the database tables:
 `django-admin makemigrations && django-admin migrate`
