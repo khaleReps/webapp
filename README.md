@@ -26,9 +26,9 @@ Before getting started, make sure you have a superuser profile created for your 
 ├── PROJECT
 │   ├── PROJECT 
 │   ├── db.sqlite3
-│   ├── application A
+│   ├── app
 │   ├── manage.py
-│   ├── templates *
+│   ├── templates
 │   │   ├── base_external.html
 │   │   ├── base_internal.html
 │   │   └── webapp
@@ -47,6 +47,7 @@ Before getting started, make sure you have a superuser profile created for your 
 │   └── webapp
 │       ├── admin.py
 │       ├── apps.py
+│       ├── forms.py
 │       ├── migrations
 │       ├── models.py
 │       ├── tests.py
